@@ -1,0 +1,20 @@
+@mixin  transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -ms-transform: $transform;
+    -moz-transform: $transform;
+}
+
+@mixin transition($transition) {
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -mstransition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin scale($scale) {
+    @include transform(scale($scale))
+}
+

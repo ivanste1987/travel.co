@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4023013d-dfd3-4c98-8345-df03b4d11db4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1YiDiA3YnclH0xLYZXrvz94wiRF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4023013d-dfd3-4c98-8345-df03b4d11db4" name="Default Changelist" comment="" />
+      <created>1583416645091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583416645091</updated>
+      <workItem from="1583416646323" duration="29091000" />
+      <workItem from="1585581625978" duration="6000" />
+      <workItem from="1590067030100" duration="8000" />
+      <workItem from="1602770024263" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="680" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583418096624">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="680" y="315" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583418096624" />
+    <state x="595" y="297" key="EditFileWatcherDialog" timestamp="1583422271781">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="595" y="297" key="EditFileWatcherDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583422271781" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1583418117666">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583418117666" />
+  </component>
+</project>

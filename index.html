@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Vue Travel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8cfd469abc.js" crossorigin="anonymous"></script>
+    <link href="./style/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Start-->
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="logo">
+                        <h1>Travel co.</h1>
+                        <a onclick="show()" id="btn">Sing in</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="social">
+                        <div id="pageCount">
+                            <span class="curentPage">01</span><span class="totalPages"> / 05</span>
+                        </div>
+                        <ol>
+                            <li><a>facebook</a></li>
+                            <li><a>instagram</a></li>
+                            <li><a>twitter</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="layers">
+            <div id="layer-moon"></div>
+            <div id="layer-0">
+                <div id="layer-1">
+                    <h2 class="display-1">Feel the mountains.</h2>
+                    <div id="layer-2"></div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="layers">
+            <div id="layer-moon"></div>
+            <div id="layer-0">
+                <div id="layer-1">
+                    <h2 class="display-1">Feel the mountains.</h2>
+                    <div id="layer-2"></div>
+                </div>
+            </div>
+            <div id="layer-3"></div>
+            <div id="layer-4"></div>
+            <div id="cloud"></div>
+        </div>
+
+
+
+    </header>
+
+    <!--Header end-->
+    <!--Monolog Start-->
+    <article id="time">
+        <div class="container-fluid my-container-fluid">
+            <div class="container my-container">
+                <div class="row my-row">
+                    <div class="col my-col">
+                        <div class="text">
+                            <h2 class="display-4">Time.</h2>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                placerat.
+                                Donec vitae lacus in ex volutpat rhoncus.
+                                Nulla ut mauris arcu. Morbi vulputate felis vitae aliquam porttitor. Fusce ultrices
+                                tincidunt ante sit amet vestibulum.
+                                Vestibulum auctor efficitur est ut maximus. Quisque pretium est ac turpis porttitor,
+                                eget tempus erat mollis. Pellentesque a sollicitudin nisi. Maecenas ornare magna lacinia
+                                placerat elementum.</p>
+                        </div>
+                    </div>
+                    <div class="col my-col">
+                        <div class="imageCon">
+                            <img src="./vue-adventure-images/hiking.png" alt="Hiking">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Monolog end-->
+    <!--Favorite journey Start-->
+    <section id="favJourney">
+        <div id="mask">
+            <div class="container my-container">
+                <h2 class="display-4">Favorite Journey.</h2>
+                <div class="row my-row">
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                                <img src="vue-adventure-images/himalaji/himalaji.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Himalayas</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                               
+                                <img src="vue-adventure-images/himalaji/pineThres.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Ebensse, Austia</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                                <img src="vue-adventure-images/himalaji/BlackAndBrown.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Pine Trees</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                                <img src="vue-adventure-images/himalaji/adventure-bench-clouds-daylight-270736.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Gray Stone Mountain</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                                <img src="vue-adventure-images/himalaji/watterfalls.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Black and Brown Mountain</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                    <div class="col my-col">
+                        <!--Start of offer-->
+                        <div class="offerContainer">
+                            <div class="offerContent">
+                                <img src="vue-adventure-images/himalaji/alps.jpg"
+                                    alt="Photo by Trace Hudson from Pexels">
+
+                                <div class="text">
+                                    <h3>Alps</h3>
+                                    <ol>
+                                        <li><a href=""><i class="far fa-comment"></i> 100</a></li>
+                                        <li><a href=""><i class="far fa-heart"></i> 150</a></li>
+                                    </ol>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada blandit
+                                        placerat. Donec vitae lacus in ex volutpat rhoncus.
+                                    </p>
+                                    <a id="btn">See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of offer-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Favorite journey end-->
+    <article id="break">
+        
+        <div class="container-fluid my-container-fluid">
+            <div class="container my-container">
+                <h2 class="display-4">experience the best memories.</h2>
+                <div class="row my-row">
+                    <div class="col my-col">
+                        <span class="display-4"><i class="fas fa-map-marked-alt"></i></span><br>
+                        <h3>atarctive sites</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                    <div class="col my-col">
+                        <span class="display-4"><i class="fas fa-snowflake"></i></span><br>
+                        <h3>100% snow guarantee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                    <div class="col my-col">
+                        <span class="display-4"><i class="far fa-calendar-alt"></i></span><br>
+                        <h3>book your accommodation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container my-container">
+            <div class="row my-row">
+                <div class="col my-col">
+                    <h3>Navigation</h3>
+                    <hr>
+                    <ol>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Offers</a></li>
+                        <li><a href="">Skiing</a></li>
+                        <li><a href="">General Conditions</a></li>
+                    </ol>
+                </div>
+                <div class="col my-col">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <ol>
+                        <li><i class="fas fa-map-marker-alt"></i> Location:<br><a href="">Dragana Rakica 20e,
+                                Belgrade</a></li>
+                        <li><i class="fas fa-mobile"></i> Phone: <br> <a href="">+(381) 64 648 73 12</a></li>
+                        <li><i class="far fa-envelope"></i> Email: <br><a href="">ivan.ste1987@gmail.com</a></li>
+                    </ol>
+                </div>
+                <div id="social" class="col my-col">
+                    <h3>Social Networks</h3>
+                    <hr>
+                    <a><i class="fab fa-facebook-square"></i></a>
+                    <a><i class="fab fa-instagram"></i></a>
+                    <a><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <p>All rights resived &#169; travelco.com</p>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

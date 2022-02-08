@@ -1,0 +1,439 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fafafa;
+  font-weight: 800;
+  font-family: "Comfortaa", cursive; }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #21201E; }
+
+a,
+li,
+p,
+span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #fafafa;
+  font-weight: 200; }
+
+a {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -mstransition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out; }
+
+a:hover {
+  cursor: pointer;
+  color: #D7753B;
+  text-decoration: none; }
+
+ol li {
+  list-style: none;
+  margin-top: 15px; }
+
+ol {
+  padding: 0; }
+
+img {
+  border-radius: 25px; }
+
+hr {
+  background: #934633;
+  width: 50%;
+  align-self: flex-start;
+  margin: 15px 0px 25px 0px; }
+
+#btn {
+  text-transform: capitalize;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 9999px;
+  background: #D7753B;
+  box-shadow: 0px 1px 6px #21201E;
+  border: 1px solid transparent;
+  transition: background color 0.35s ease-in-out;
+  -webkit-transition: background color 0.35s ease-in-out;
+  -moz-transition: background color 0.35s ease-in-out;
+  -mstransition: background color 0.35s ease-in-out;
+  -o-transition: background color 0.35s ease-in-out;
+  color: #fafafa; }
+  #btn:hover {
+    background: #21201E;
+    color: #D7753B;
+    border: 1px solid #D7753B; }
+
+@keyframes btn {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -moz-transform: translateY(0px); }
+  50% {
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -moz-transform: translateY(3px); }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -moz-transform: translateY(0px); } }
+footer {
+  padding: 50px 0px 0px;
+  height: auto;
+  background-color: #21201E;
+  z-index: 2; }
+  footer .my-container {
+    background-color: #21201E;
+    padding-bottom: 50px; }
+  footer .container-fluid {
+    background-color: #21201E;
+    text-align: center;
+    padding: 25px 0px; }
+  footer .my-row {
+    height: auto;
+    padding: 25px 0px; }
+    footer .my-row .my-col {
+      min-width: 375px;
+      width: 100%;
+      padding-top: 25px; }
+    footer .my-row #social a {
+      color: #fafafa;
+      font-size: 30px;
+      margin-right: 15px; }
+
+header {
+  width: 100%;
+  height: 1280px;
+  z-index: 5; }
+  header nav {
+    height: 100vh; }
+    header nav .row {
+      height: 50vh; }
+      header nav .row #logo {
+        width: 100%;
+        display: flex;
+        padding: 50px;
+        justify-content: space-between;
+        align-self: flex-start; }
+        header nav .row #logo h1 {
+          align-self: flex-start; }
+      header nav .row #social {
+        width: 100%;
+        padding: 50px 50px 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        justify-self: flex-end;
+        align-self: flex-end; }
+        header nav .row #social #pageCount {
+          padding: 25px;
+          text-align: center;
+          align-self: flex-end; }
+          header nav .row #social #pageCount .curentPage {
+            font-size: 60px;
+            font-weight: 800; }
+          header nav .row #social #pageCount .totalPages {
+            font-weight: bold;
+            font-size: 25px; }
+        header nav .row #social ol {
+          display: flex;
+          list-style: none;
+          justify-content: center;
+          align-content: center; }
+          header nav .row #social ol li {
+            font-size: 18px;
+            margin: 15px; }
+
+.layers {
+  width: 100%;
+  height: 1280px;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-image: url("../../imgs/bg2/z0.png");
+  background-size: cover;
+  background-position: top right;
+  z-index: -1; }
+  .layers #layer-moon {
+    z-index: 0;
+    width: 100%;
+    height: 1280px;
+    position: fixed;
+    background-image: url("../../imgs/bg2/z1.png");
+    background-size: cover;
+    background-position: top right; }
+  .layers #layer-0 {
+    z-index: 1;
+    width: 100%;
+    height: 1280px;
+    position: fixed;
+    background-image: url("../../imgs/bg2/z2.png");
+    background-size: cover;
+    background-position: top right; }
+    .layers #layer-0 #layer-1 {
+      z-index: 2;
+      width: 100%;
+      max-height: 1280px;
+      height: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center; }
+      .layers #layer-0 #layer-1 h2 {
+        align-self: center;
+        text-align: center; }
+      .layers #layer-0 #layer-1 #layer-2 {
+        z-index: 3;
+        width: 100%;
+        height: 1280px;
+        position: fixed;
+        background-image: url("../../imgs/bg2/z3.png");
+        background-size: cover;
+        background-position: top right;
+        display: flex;
+        flex-direction: column; }
+  .layers #layer-3 {
+    z-index: 4;
+    width: 100%;
+    height: 1280px;
+    position: fixed;
+    background-image: url("../../imgs/bg2/z4.png");
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    flex-direction: column; }
+  .layers #layer-4 {
+    z-index: 5;
+    width: 100%;
+    height: 1280px;
+    position: fixed;
+    background-image: url("../../imgs/bg2/z5.png");
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    flex-direction: column; }
+  .layers #cloud {
+    width: 300%;
+    height: 100%;
+    background-image: url("../../imgs/bg2/sky.jpg");
+    opacity: 0.3;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    animation-name: movingCloud;
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
+
+@keyframes movingCloud {
+  0% {
+    left: 0%; }
+  25% {
+    left: -200%; }
+  50% {
+    left: 0%; }
+  100% {
+    left: -100%; } }
+#time {
+  width: 100%;
+  height: auto;
+  box-shadow: -6px 0px 160px #21201E; }
+  #time .my-container-fluid {
+    background: #21201E;
+    padding: 100px; }
+    #time .my-container-fluid .my-col {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      #time .my-container-fluid .my-col .text {
+        text-align: left;
+        min-width: 350px;
+        width: 100%; }
+      #time .my-container-fluid .my-col .imageCon img {
+        min-width: 350px;
+        width: 100%;
+        height: auto; }
+
+#favJourney {
+  width: 100%;
+  height: auto;
+  background: url("../../vue-adventure-images/brake.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  #favJourney #mask {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgba(33, 32, 30, 0.35); }
+    #favJourney #mask .my-container .my-row {
+      margin-top: 50px; }
+      #favJourney #mask .my-container .my-row .my-col {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px auto;
+        position: relative;
+        padding: 0;
+        min-width: 325px;
+        width: 100%;
+        min-height: 475px;
+        height: 100%; }
+        #favJourney #mask .my-container .my-row .my-col .offerContainer {
+          padding: 0; }
+          #favJourney #mask .my-container .my-row .my-col .offerContainer:hover .offerContent {
+            transition: box-shadow 0.35s ease-in-out;
+            -webkit-transition: box-shadow 0.35s ease-in-out;
+            -moz-transition: box-shadow 0.35s ease-in-out;
+            -mstransition: box-shadow 0.35s ease-in-out;
+            -o-transition: box-shadow 0.35s ease-in-out;
+            box-shadow: 0px 0px 6px #21201E;
+            z-index: 9999; }
+          #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent,
+          #favJourney #mask .my-container .my-row .my-col .offerContainer .text {
+            min-width: 325px;
+            width: 100%;
+            min-height: 475px;
+            height: 100%;
+            border-radius: 25px; }
+          #favJourney #mask .my-container .my-row .my-col .offerContainer img {
+            width: 100%;
+            height: 100%; }
+          #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -mstransition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out; }
+            #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text,
+            #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent img {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              transition: all 0.5s ease-in-out;
+              -webkit-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -mstransition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out; }
+            #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent:hover img {
+              transform: scale(1.2);
+              -webkit-transform: scale(1.2);
+              -o-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              -moz-transform: scale(1.2); }
+            #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text {
+              padding: 25px;
+              background-color: rgba(33, 32, 30, 0.35);
+              transition: all 0.35s ease;
+              -webkit-transition: all 0.35s ease;
+              -moz-transition: all 0.35s ease;
+              -mstransition: all 0.35s ease;
+              -o-transition: all 0.35s ease; }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text ol {
+                display: flex;
+                list-style-type: none;
+                padding: 0; }
+                #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text ol li {
+                  margin: 0px 10px 0px 0px; }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text hr,
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text p,
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text a {
+                transform: translateX(-120%);
+                -webkit-transform: translateX(-120%);
+                -o-transform: translateX(-120%);
+                -ms-transform: translateX(-120%);
+                -moz-transform: translateX(-120%); }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text hr {
+                transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -mstransition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out; }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text p {
+                transition: all 0.45s ease-in-out;
+                -webkit-transition: all 0.45s ease-in-out;
+                -moz-transition: all 0.45s ease-in-out;
+                -mstransition: all 0.45s ease-in-out;
+                -o-transition: all 0.45s ease-in-out; }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text:hover {
+                background-color: rgba(32, 27, 24, 0.7); }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text:hover hr {
+                transform: translateX(0%);
+                -webkit-transform: translateX(0%);
+                -o-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                -moz-transform: translateX(0%); }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text:hover p {
+                transform: translateX(0%);
+                -webkit-transform: translateX(0%);
+                -o-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                -moz-transform: translateX(0%); }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text:hover a#btn {
+                transform: translateX(0%);
+                -webkit-transform: translateX(0%);
+                -o-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                -moz-transform: translateX(0%); }
+              #favJourney #mask .my-container .my-row .my-col .offerContainer .offerContent .text a#btn {
+                transition: all 0.4s ease-in-out;
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -mstransition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                position: absolute;
+                left: 25px;
+                bottom: 25px; }
+
+article#break {
+  padding: 50px 0px;
+  position: relative;
+  background-image: url("../../vue-adventure-images/brake-blure.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
+  article#break .my-container .my-col {
+    min-width: 375px;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center; }
+  article#break p {
+    text-align: center;
+    text-transform: capitalize; }
+  article#break .row {
+    margin-top: 50px; }
+
+/*# sourceMappingURL=style.css.map */

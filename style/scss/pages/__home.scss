@@ -1,0 +1,424 @@
+@import "../utilities/utilites";
+
+header {
+    width: 100%;
+    height: 1280px;
+    z-index: 5;
+
+    nav {
+        height: 100vh;
+
+        .row {
+            height: 50vh;
+
+            #logo {
+                width: 100%;
+                display: flex;
+                padding: 50px;
+                justify-content: space-between;
+                align-self: flex-start;
+
+                h1 {
+                    align-self: flex-start;
+                }
+            }
+
+            #social {
+                width: 100%;
+                padding: 50px 50px 150px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                justify-self: flex-end;
+                align-self: flex-end;
+
+                #pageCount {
+                    padding: 25px;
+                    text-align: center;
+                    align-self: flex-end;
+
+                    .curentPage {
+                        font-size: 60px;
+                        font-weight: 800;
+                    }
+
+                    .totalPages {
+                        font-weight: bold;
+                        font-size: 25px;
+                    }
+                }
+
+                ol {
+                    display: flex;
+                    list-style: none;
+                    justify-content: center;
+                    align-content: center;
+
+                    li {
+                        font-size: 18px;
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//lejeri za telefone visina treha da im bude 100vh
+// .layers {
+//     width: 100%;
+//     height: 1280px;
+//     padding: 0;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     overflow-x: hidden;
+//     background-image: url("../../vue-adventure-images/sky-layer0.png");
+//     background-size: cover;
+//     background-position: top left;
+//     z-index: -1;
+
+//     #layer-moon {
+//         z-index: 0;
+//         width: 100%;
+//         height: 1280px;
+//         position: fixed;
+//         background-image: url("../../vue-adventure-images/moon-zindex-1.png");
+//         background-size: cover;
+//         background-position: top right;
+//     }
+
+//     #layer-0 {
+//         z-index: 1;
+//         width: 100%;
+//         height: 1280px;
+//         position: fixed;
+//         background-image: url("../../vue-adventure-images/mountain-zindex-01.png");
+//         background-size: cover;
+//         background-position: top left;
+
+//         #layer-1 {
+//             z-index: 2;
+//             width: 100%;
+//             max-height: 1280px; //on treba uvek da bude 100% na telefonu 50%
+//             height: 100%;
+//             position: fixed;
+//             display: flex;
+//             justify-content: center;
+
+//             h2 {
+//                 align-self: center;
+//                 text-align: center;
+//             }
+
+//             #layer-2 {
+//                 z-index: 3;
+//                 width: 100%;
+//                 height: 1280px;
+//                 position: fixed;
+//                 background-image: url("../../vue-adventure-images/mountin-zindex-2.png");
+//                 background-size: cover;
+//                 background-position: top left;
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// }
+.layers {
+    width: 100%;
+    height: 1280px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-image: url("../../imgs/bg2/z0.png");
+    background-size: cover;
+    background-position: top right;
+    z-index: -1;
+
+    #layer-moon {
+        z-index: 0;
+        width: 100%;
+        height: 1280px;
+        position: fixed;
+        background-image: url("../../imgs/bg2/z1.png");
+        background-size: cover;
+        background-position: top right;
+    }
+
+    #layer-0 {
+        z-index: 1;
+        width: 100%;
+        height: 1280px;
+        position: fixed;
+        background-image: url("../../imgs/bg2/z2.png");
+        background-size: cover;
+        background-position: top right;
+
+        #layer-1 {
+            z-index: 2;
+            width: 100%;
+            max-height: 1280px; //on treba uvek da bude 100% na telefonu 50%
+            height: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                align-self: center;
+                text-align: center;
+            }
+
+            #layer-2 {
+                z-index: 3;
+                width: 100%;
+                height: 1280px;
+                position: fixed;
+                background-image: url("../../imgs/bg2/z3.png");
+                background-size: cover;
+                background-position: top right;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    #layer-3 {
+        z-index: 4;
+        width: 100%;
+        height: 1280px;
+        position: fixed;
+        background-image: url("../../imgs/bg2/z4.png");
+        background-size: cover;
+        background-position: top right;
+        display: flex;
+        flex-direction: column;
+    }
+    #layer-4 {
+        z-index: 5;
+        width: 100%;
+        height: 1280px;
+        position: fixed;
+        background-image: url("../../imgs/bg2/z5.png");
+        background-size: cover;
+        background-position: top right;
+        display: flex;
+        flex-direction: column;
+    }
+    #cloud{
+        width: 300%;
+        height: 100%;
+        background-image: url('../../imgs/bg2/sky.jpg');
+        opacity: 0.3;
+        background-size: 100% 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        animation-name: movingCloud;
+        animation-duration: 160s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes movingCloud {
+    0%{
+        left: 0%;
+    }
+    25%{
+        left: -200%;
+    }
+    50%{
+        left: 0%
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+#time {
+    width: 100%;
+    height: auto;
+    box-shadow: -6px 0px 160px $bgcolor;
+
+    .my-container-fluid {
+        background: $bgcolor;
+        padding: 100px;
+
+        .my-col {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .text {
+                //align-self: flex-end;
+                text-align: left;
+                min-width: 350px;
+                width: 100%;
+            }
+
+            .imageCon {
+                //align-self: flex-start;
+
+                img {
+                    min-width: 350px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+#favJourney {
+    width: 100%;
+    height: auto;
+    background: url("../../vue-adventure-images/brake.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    #mask {
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        background-color: $maskcolor;
+
+        .my-container {
+            .my-row {
+                margin-top: 50px;
+
+                .my-col {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 15px auto;
+                    position: relative;
+                    padding: 0;
+                    min-width: 325px;
+                    width: 100%;
+                    min-height: 475px;
+                    height: 100%;
+
+                    .offerContainer {
+                        padding: 0;
+
+                        &:hover .offerContent {
+                            @include transition(box-shadow 0.35s ease-in-out);
+                            box-shadow: 0px 0px 6px $bgcolor;
+                            z-index: 9999;
+                        }
+
+                        .offerContent,
+                        .text {
+                            min-width: 325px;
+                            width: 100%;
+                            min-height: 475px;
+                            height: 100%;
+                            border-radius: 25px;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .offerContent {
+                            position: relative;
+                            overflow: hidden;
+                            @include transition(all 0.35s ease-in-out);
+
+                            .text,
+                            img {
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                @include transition(all 0.5s ease-in-out);
+                            }
+                            &:hover img {
+                                @include scale(1.2);
+                            }
+
+                            .text {
+                                padding: 25px;
+                                background-color: $maskcolor;
+                                @include transition(all 0.35s ease);
+
+                                ol {
+                                    display: flex;
+                                    list-style-type: none;
+                                    padding: 0;
+
+                                    li {
+                                        margin: 0px 10px 0px 0px;
+                                    }
+                                }
+
+                                hr,
+                                p,
+                                a {
+                                    @include transform(translateX(-120%));
+                                }
+                                hr {
+                                    @include transition(all 0.5s ease-in-out);
+                                }
+                                p {
+                                    @include transition(all 0.45s ease-in-out);
+                                }
+
+                                &:hover {
+                                    background-color: rgba(32, 27, 24, 0.70);
+                                }
+
+                                &:hover hr {
+                                    @include transform(translateX(0%));
+                                }
+
+                                &:hover p {
+                                    @include transform(translateX(0%));
+                                }
+
+                                &:hover a#btn {
+                                    @include transform(translateX(0%));
+                                }
+
+                                a#btn {
+                                    @include transition(all 0.4s ease-in-out);
+                                    position: absolute;
+                                    left: 25px;
+                                    bottom: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+article#break {
+    padding: 50px 0px;
+    position: relative;
+    background-image: url("../../vue-adventure-images/brake-blure.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    .my-container {
+        .my-col {
+            min-width: 375px;
+            width: 100%;
+            padding-top: 25px;
+            text-align: center;
+        }
+    }
+    p {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .row {
+        margin-top: 50px;
+    }
+}
